@@ -8,6 +8,155 @@
 
     <title>Entrega 2 PAME 2023.2</title>
     <link rel="stylesheet" href="entrega2Fluxo.css">
+    <style>
+#NomeELogo{
+    display: flex;
+    align-items: center;
+}
+
+#Cabecalho{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    font-size: 15px;
+    background-color: #302f2f;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 50px;
+    font-size: small;
+}
+
+#head {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+body {
+    /* Definindo a imagem de fundo */
+    background-image: url(imagemFluxo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* Adicionei um pseudo-elemento ::before para o degradê */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(to bottom, rgba(32, 32, 32, 0.5), rgba(0, 0, 0, 0.9));
+    z-index: -1; /* Colocquei o pseudo-elemento atrás do conteúdo do corpo */
+}
+
+input {
+    /* Caixa de texto para Usuario e Senha */
+    width: 70%;
+    text-align: left;
+    padding: 13px 18px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #202020;
+    color: #888888;
+}
+
+#body {
+    border-color: #302f2f;
+    border-width: 30px 5px 40px 5px;
+    border-style: solid;
+    border-radius: 3%;
+    background-color:#302f2f;
+    width: 380px;
+    height: 420px;
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(207, 207, 207);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;         
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: rgb(49, 104, 187);
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: #1ef70a;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.remember-me-toggle {
+    /* Toggle button utilizado para o remember me, quando está para esquerda é false, para direita true*/
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #1ef70a;
+    cursor: pointer;
+}
+
+.toggle-handle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #202024;
+    color: white;
+    padding: 10px 68px;
+    font-size: 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: medium;
+    color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
 
     <header class= "header">
 
