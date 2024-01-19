@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+
+    <title>Entrega 2 PAME 2023.2</title>
+    <link rel="stylesheet" href="entrega2Fluxo.css">
+
+    <header class= "header">
+
+         <div id="NomeELogo">
+                <h1 id="nome"><u>GitFluxo</u></h1>
+             <img src="imagemFluxoGitHub.png" style="width: 40px;height: 40px;">
+        </div>
+
+             <h1 class="Slogan">Let's build from here</h1>
+    </header>
+    </head>
+    <body>
+
+        <div class="form-header">
+            <div id="Cabecalho">
+                <h1>Sign in to GitFluxo</h1>
+            </div>
+        </div>
+
+        <div id="body">
+            <form  onsubmit="enviarFormulario(); return false;">
+                <label for="Nome">Username or email address</label><br>
+                <input type="text" id ="Nome" name="Nome" placeholder="username or email address" required><br><br>
+
+                <label for="password">Password</label>
+                <button type="button" class="button">Forgot Password?</button>
+                <input type="password" id="Senha" name="Senha" placeholder="password" style="text-align: left;" required><br><br>
+
+                <div class="remember-me-toggle" onclick="toggleRememberMe()">
+                    <div class="toggle-handle" id="toggleHandle"></div>
+                </div> remember me
+
+
+                <br><input type="submit" value="Sign in" style="padding: 10px 150px;"><br><br>
+                    
+                <p name="or" id="or" cols="0" rows="1" style="text-align: center;" style="color:#202024;">or</p><br>
+
+                <button id="button2" name="button2"><img src="imagemFluxoGoogle.png" style="width: 20px;"> Continue with Google
+                </button><br><br>
+                <button id="button2" name="button2" style="padding: 10px 60px;"><img src="imageFluxoFacebook.png" style="width: 20px;"> Continue with Facebook
+                </button>   
+
+            <script>
+
+                // Função utilizada para ativar ou desativar o "remember me", embora na hora de estilizá-lo tenha errado em algo
+                function toggleRememberMe() {
+                            var handle = document.getElementById("toggleHandle");
+                            var isChecked = handle.style.transform === "translateX(20px)";
+                            if (isChecked) {
+                                handle.style.transform = "translateX(0)";
+                                handle.style.backgroundColor = "#888888";
+                            } else {
+                                handle.style.transform = "translateX(20px)";
+                                handle.style.backgroundColor = "#06d110";
+                            }
+                        }
+                // Função utilizada para mostrar as informações do login
+                        function enviarFormulario() {
+                            var nomeUsuario = document.getElementById("Nome").value;
+                            var senha = document.getElementById("Senha").value;
+                            var lembrar = document.getElementById("toggleHandle").style.transform === "translateX(20px)";
+
+                // Exibir informações no alerta
+                alert("Informações Enviadas:\n\nNome de Usuário: " + nomeUsuario + "\nSenha: " + senha + "\nLembrar de Mim: " + lembrar);
+                        }
+            </script>
+
+            </form>
+
+        </div>
+
+        <footer>
+            <br><br><p>Terms Privacy Docs Contact GitFluxoSupport Do not share my personal information</p> 
+        </footer>
+
+    </body>
+
+</html>
